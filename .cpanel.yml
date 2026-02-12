@@ -1,23 +1,10 @@
----
 project:
   name: ddnaweb-main
   type: nodejs
-  entry: npm run start
+  entry: next start
   build:
     - npm install
-    - npm run build
-  environment:
-    NODE_ENV: production
-    PORT: 3000
-  deployment:
-    start:
-      command: npm run start
-    stop:
-      command: ''
-    restart:
-      command: npm run start
-    pre_deploy:
-      - npm install
-      - npm run build
-    post_deploy:
-      - echo "Deployment complete"
+    - next build
+environment:
+  NODE_ENV: production
+  PORT: 3000
