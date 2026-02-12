@@ -4,14 +4,13 @@ node_modules/
 .pnp.js
 
 # Testing
-/coverage
+node_modules/
 
 # Production
 /build
 /dist
 /.next
-/out
-
+build/
 # Misc
 .DS_Store
 *.pem
@@ -28,8 +27,8 @@ yarn-error.log*
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.project
+.env*.local
+.env
 .classpath
 .c9/
 *.launch
